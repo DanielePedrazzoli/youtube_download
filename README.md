@@ -9,3 +9,5 @@ Il file scaricato verrà rinominato con il nome del video di riferimento. L'este
 ## Librerie
 Questa applicazione funziona come wrap della libreia [youtube_explode_dart](https://pub.dev/packages/youtube_explode_dart) aggiungendogli quindi semplicemnte una interfaccia grafica.
 Per il salvataggio dei file viene usata la libreia [flutter_file_dialog](https://pub.dev/packages/flutter_file_dialog).
+
+

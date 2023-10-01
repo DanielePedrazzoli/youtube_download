@@ -31,27 +31,27 @@ class _DownloadOptionWidgetState extends State<DownloadOptionWidget> {
               },
               title: const Text("Includi il video"),
             ),
-            // if (option.donwloadVideo == true)
-            //   Row(
-            //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //     children: [
-            //       const Text("Risoluzione video"),
-            //       DropdownButton<Resolution>(
-            //         value: option.risoluzioneVideo,
-            //         items: List.generate(
-            //           Resolution.values.length,
-            //           (index) => DropdownMenuItem(
-            //             value: Resolution.values[index],
-            //             child: Text(Resolution.values[index].name),
-            //             onTap: () {},
-            //           ),
-            //         ),
-            //         onChanged: (value) => setState(() {
-            //           option.risoluzioneVideo = value!;
-            //         }),
-            //       ),
-            //     ],
-            //   ),
+            if (option.donwloadVideo == true)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text("Risoluzione video"),
+                  DropdownButton<Resolution>(
+                    value: option.risoluzioneVideo,
+                    items: List.generate(
+                      Resolution.values.length,
+                      (index) => DropdownMenuItem(
+                        value: Resolution.values[index],
+                        child: Text(Resolution.values[index].name),
+                        onTap: () {},
+                      ),
+                    ),
+                    onChanged: (value) => setState(() {
+                      option.risoluzioneVideo = value!;
+                    }),
+                  ),
+                ],
+              ),
             // Row(
             //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
             //   children: [
